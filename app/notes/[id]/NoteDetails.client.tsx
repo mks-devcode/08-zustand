@@ -32,7 +32,11 @@ export default function NoteDetailsClient() {
   return (
     <main className={css.main}>
       <div className={css.container}>
-        <button className={css.backBtn} type="button" onClick={() => router.back()}>
+        <button
+          className={css.backBtn}
+          type="button"
+          onClick={() => router.push('/notes/filter/all')}
+        >
           Go back
         </button>
         <div className={css.item}>
